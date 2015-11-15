@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Introduction to Netbeans</title>
+
+		<meta name="description" content="Presentation for CSCI 5448, Fall 2015">
+		<meta name="author" content="Diana Southard">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<style>
+		table {
+		    border-collapse: collapse;
+		}
+
+		table, td, th {
+		    border: 1px solid black;
+		}
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>Introduction to Netbeans</h2>
+					<img src="images/logo.jpg">
+					<h4>Presented by Diana Southard</h4>
+          			<p>CSCI 5828, Presentation 3, Fall 2015</p>
+				</section>
+
+				<section>
+					<h3>Table of Contents</h3>
+					<ol>
+						<li>Getting Started</li>
+						<li>Setting up a Project</li>
+						<li>Creating a Class</li>
+						<li>Running the Program</li>
+						<li>Advantages of Netbeans</li>
+						<li>Conclusion</li>
+						<li>Sources</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Getting Started</h2>
+					<p>First, need to download the program at <a href="https://netbeans.org/downloads/">Netbeans.org</a></p>
+					<p>This program works on any platform with a Java Virtual Machine. This tutorial will use screenshots from Ubuntu running Netbeans 8.0.2. Follow the download instructions on the website.</p>
+				</section>
+				
+				<section>
+					<h2>Setting up a Project</h2>
+					<p>Assume that you have successfully installed NetBeans on your machine. Start NetBeans. The NetBeans main window should appear, as shown below.</p>
+					<img src = "images/fig1.png">
+				</section>
+				
+				<section>
+					<p>Here are the steps to create a demo project:<p>
+					<ul>
+						<li>Choose File, New Project to display the New Project dialog box. </li>
+						<img src = "images/fig2.png">
+					
+				</section>
+				
+				<section>
+					
+						<li>Select General in the Categories section and Java Application in the Projects section and click Next to display the New Java Application dialog box.</li>
+						<img src = "images/fig3.png">
+						<li>Type desired project name in the Project Name field and desired location in Project Location field.</li>
+					</section>
+					
+					<section>
+						<li>Click Finish to create the project. The new project is displayed</li>
+						<img src = "images/fig4.png">
+					</ul>
+					<p>Netbeans automatically includes a customizable license header at the top of each new file. It also automatically includes relevant comments before auto-created classes/methods (author, parameter descriptions, etc.) </p>
+				</section>
+				
+				<section>
+					<h2>Creating a Class</h2>
+					<p>Here are the steps to create a new Java class in the demo project:</p>
+					<ul>
+						<li>Choose File, New File to display the New File dialog box. </li>
+						<img src = "images/fig5.png">
+					</section>
+					
+					<section>
+						<li>Check that in the Project drop-down menu, the demo project is currently displayed. Otherwise, use the menu to select the demo project. In the Categories menu on the left, select Java. </li>
+						<li>In the File Types menu on the right, select Java Class. Then select Next to display the New Java Class dialog box.</li>
+						<img src = "images/fig6.png">
+					</section>
+						
+					<section>
+						<li>In the New Java Class dialog box, enter in the desired name for the new class in the Class Name field.</li>
+						<li> Check again that the demo project is selected in the Project field, and that the new class is being created in the same location as the demo project as indicated in the Created File field. <i>(These fields are auto-populated and should be correct)</i>. Click Finish.</li>
+					</section>
+					
+					<section>
+						<li>The new class is created and displayed.</li>
+					</ol>
+					<img src = "images/fig7.png">
+					</section>
+					
+					<section>
+					<p>If you start to use classes whose packages have not yet been imported, Netbeans highlights the discrepancy and then suggests importing the class.</p>
+					<img src = "images/error.png">
+					</section>
+					
+					<section>
+					<p> You can place your cursor onto the word that is underlined in red, hit Alt-Enter on the keyboard for a list of suggestions on how to correct the error, and then hit Enter again for the program to automatically include the import.</p>
+					<img src = "images/fixed.png">
+					</section>
+					
+					<section>
+					<p>One nice thing about Netbeans is the auto-generated code that is capable of being done by the program. If, in your new class, you had several private variables, as seen in the previous two figures, it is easy for the program to automatically create Getter and Setter methods.</p>
+					<p>You can either right click on the desired variable and select Insert Code from the menu, or place your text cursor in the word and hit Alt-Insert on the keyboard to immediately bring up the Generate menu.</p>
+					<img src = "images/generate.png">
+					</section>
+					
+					<section>
+					<p>Netbeans is capable of generator Constructor, Logger, Getter, Setting, toString and other commonly-used methods. Selecting one of these options brings up the associated Generate __ dialog box, which also gives you the ability to generate the same methods for other variables to save you time. It also gives the option to automatically encapsulate the fields!</p>
+					<img src = "images/fields.png">
+					</section>
+					
+					<section>
+					<p>With just a few seconds and a few clicks on the mouse, the most trivial methods of my class can be created for me!</p>
+					<img src = "images/fig8.png">
+				</section>
+							
+				<section>
+					<h2>Running the Program</h2>
+					<p>To compile the project, select Run and choose Compile File, or simply press F9. Providing no errors were found, the Output pane will display a successful build message.</p>
+					<img src = "images/fig9.png">
+					</section>
+					
+					<section>
+					<p>To run the project, select Run and choose Run File, or simply press Shift + F6. The output is displayed in the Output pane.</p>
+					</section>
+					
+					<section>
+					<p>To insert debugging breaking points, simply click on the line number to the left of the code you are debugging. Netbeans allows for variable watching, stepping through/over code, and running the code to a desired line while debugging.</p>
+					<img src = "images/debug.png">
+				</section>
+
+				<section>
+					<h2>Advantages of Netbeans</h2>
+					<p>There are many advantages to using Netbeans, such as the ones listed below:</p>
+					<ul>
+						<li>powerful built-in Profiler</li>
+						<li>natively supports Ant and Maven</li>
+						<li>excellent support for the latest Java EE features, no need to download plugins</li>
+						<li>excellent integration with GlassFish/JBoss/Tomcat/WebLogic </li>
+						<li>Ant debugger </li>
+						</section>
+						
+						<section>
+						<li>excellent support for JavaFX </li>
+						<li>code completion with JPA and queries </li>
+						<li>includes new features for editing/debugging HTML5</li>
+						<li>rich framework for building desktop Java applications</li> 
+						<li>written using Swing</li>
+						<li>built-in support for version control systems </li>
+						<li>clean intuitive UI</li>
+						<li>can actually change settings in NetBeans to have it use 'Eclipse' shortcuts, if you’re really used to using Eclipse</li>
+						<li>extensive online community for help solving problems</li>
+					</ul>
+				</section>
+				
+				<section>
+				<h2>Conclusion</h2>
+				<p>Netbeans can sometimes be an overlooked IDE, compared to others such as Eclipse. Hopefully this presentation provided some basics on how to use it as well as some reasons to give it a try!</p>
+					</ul>
+				</section>
+				
+				<section>
+				<h2>Sources</h2>
+				<ul>
+					<li>Screenshots were all taken on my own laptop.</li>
+					<li>Basics of Netbeans were adapted from Netbeans' <a href = "https://netbeans.org/kb/docs/java/quickstart.html"> Quick Start Tutorial</a>, as well as from personal experience.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Thank You</h2>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
